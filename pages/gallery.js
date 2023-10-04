@@ -13,7 +13,7 @@ export default function Gallery({ feed }) {
 
         <Container>
             <Heading as="h3" fontSize={30} mb={5} >
-               Instagram Gallery
+               My Instagram Gallery
             </Heading>
             <Section delay={0.5}>
            
