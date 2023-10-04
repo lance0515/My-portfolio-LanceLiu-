@@ -7,9 +7,9 @@ import Section from '../components/section'
 
 
 
-export default function Gallery({ feed }) {
+export default function Gallery({  }) {
     
-    const images = feed.data
+    //const images = feed.data
     return (
 
         <Container>
@@ -23,19 +23,7 @@ export default function Gallery({ feed }) {
                     <SimpleGrid columns={3} gap={1}>
               
             
-                    {images && images.map(image => (
-                       
-                        <div key={image.id}>
-                            <img 
-                            
-                            src={image.media_url}
-                            alt={image.caption} 
-                            herf={image.permalink}
-                            />   
-                            
-                            </div>
-                            
-                    ))}
+                  
                     </SimpleGrid>
                
             </Section>
