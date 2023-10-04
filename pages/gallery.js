@@ -7,7 +7,7 @@ export default function Gallery (){
     return(
         <Container>
             <Heading as="h3" fontSize={20}mb={4}>
-                Gallery
+                Gallery ins
             </Heading>
         </Container>
         
