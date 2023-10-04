@@ -8,7 +8,7 @@ import Section from '../components/section'
 
 
 export default function Gallery({ feed }) {
-    console.log(feed.data)
+    
     const images = feed.data
     return (
 
@@ -43,5 +43,17 @@ export default function Gallery({ feed }) {
 
 
     )
+
+}
+export const getStaticProps = async () => {
+    const url = `${process.env.NEXT_PUBLIC_API}${process.env.NEXT_PUBLIC_INSTAGRAM_KEY}`
+    const data = await fetch(url)
+    const feed = await data.json()
+    console.log(feed)
+    return {
+        props: {
+            feed,
+        },
+    }
 
 }
