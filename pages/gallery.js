@@ -46,7 +46,7 @@ export default function Gallery({ feed }) {
 
 }
 export const getStaticProps = async () => {
-    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,permalink&access_token=IGQWRNaUxFaVZAvVzA1VkhTMWhLZAERiSXd2R0VuQ2EtV240VXBaOWRyVlVxaG5yM1hnOHIxSFBGQmphM053bl9zQjVGMktid2hZAVVh3MzZAQNGZA5QzdMQlhDMklnMGpWM29YYWxlSjE4WmpKVGR0bVIxTmRxMDVneGsZD`
+    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,media_type,permalink&access_token=IGQWRPLUd5SEZARb1ZAIYU5NbUN4cnhkcFVmS292bFhYb0xObV9BNFRmOUJ4eVltM3pXNW42Y3c4MzFMV0s5a09CVmZAxN2hwcXhLT1YteFZATSjNxS0NmcFYwalhub2duRzJaLW5VVXR5TEpKLW9QeHJhOEs0QXFKRTQZD`
     const data = await fetch(url)
     const feed = await data.json()
     
