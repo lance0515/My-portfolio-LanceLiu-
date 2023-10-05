@@ -22,7 +22,7 @@
     "py": "^0.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "vercel-build": "npm run prepare && next build"
+    "vercel-build": "npm run dev"
   },
   "devDependencies": {
     "eslint": "^8.50.0",
