@@ -42,7 +42,8 @@ export default function Gallery({ feed }) {
         </Container>
 
 
-    )
+    )  
+    
 
 }
 export const getStaticProps = async () => {
