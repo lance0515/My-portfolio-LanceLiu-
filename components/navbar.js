@@ -79,14 +79,12 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-           <LinkItem href="/posts" path={path}>
-            about
-          </LinkItem>
+           
           <LinkItem href="/gallery" path={path}>
             Gallery
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="https://www.instagram.com/yuan__photo__/?img_index=1" path={path}>
+            My Instagram
           </LinkItem>
          
         </Stack>

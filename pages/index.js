@@ -4,6 +4,7 @@ import NextLink from'next/link.js'
 import { BioSection,BioYear } from "../components/bio.js"
 import Paragraph from "../components/paragraph.js"
 import { ChevronRightIcon } from "@chakra-ui/icons"
+
 const Page= ()=>{
     return(
         <Container>
@@ -86,8 +87,10 @@ const Page= ()=>{
                 完成兵役，準備投入職場
             </BioSection>
             </Section>
+          
         </Container>
         
     )
+    
 }
 export default Page
