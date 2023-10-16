@@ -16,7 +16,7 @@ export default function Gallery({ feed }) {
             <Heading as="h3" fontSize={30} mb={5} >
                My Instagram Gallery
             </Heading>
-            <Section delay={0.5}>
+            <Section delay={0.4}>
            
  
            
@@ -27,7 +27,6 @@ export default function Gallery({ feed }) {
                        
                         <div key={image.id}>
                             <img 
-                            
                             src={image.media_url}
                             alt={image.caption} 
                             herf={image.permalink}
