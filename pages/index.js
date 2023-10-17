@@ -2,7 +2,7 @@ import { Container ,Box,Heading,Image ,useColorModeValue , Button, SimpleGrid} f
 import Section from'../components/section.js'
 import NextLink from'next/link.js'
 
-import article from '../components/layouts/article.js'
+
 import { GridItem } from '../components/grid-item.js'
 import { BioSection,BioYear } from "../components/bio.js"
 import Paragraph from "../components/paragraph.js"
