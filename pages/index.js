@@ -1,9 +1,14 @@
-import { Container ,Box,Heading,Image ,useColorModeValue , Button} from "@chakra-ui/react"
+import { Container ,Box,Heading,Image ,useColorModeValue , Button, SimpleGrid} from "@chakra-ui/react"
 import Section from'../components/section.js'
 import NextLink from'next/link.js'
+
+import article from '../components/layouts/article.js'
+import { GridItem } from '../components/grid-item.js'
 import { BioSection,BioYear } from "../components/bio.js"
 import Paragraph from "../components/paragraph.js"
 import { ChevronRightIcon } from "@chakra-ui/icons"
+import fireproject from "../public/images/fireproject.gif"
+import myportfolio from "../public/images/myportfolio.png"
 
 const Page= ()=>{
     return(
@@ -87,7 +92,29 @@ const Page= ()=>{
                 完成兵役，準備投入職場
             </BioSection>
             </Section>
-          
+            
+            <Section delay={0.3}>
+            <Heading as="h3" variant="section-title">Project I made</Heading>
+            <SimpleGrid columns={[1,2,2]} gap={6}>
+                <GridItem
+                title="My graduate Project"
+                thumbnail={fireproject}
+                href="https://drive.google.com/file/d/1wEtErEHkRx7jHvZkKH98Py8d65D6Bo7P/view"
+                
+                >
+
+                </GridItem>
+                <GridItem
+                title="My portfolio"
+                thumbnail={myportfolio}
+                href="https://my-portfolio-lance-liu.vercel.app/"
+                
+                >
+
+                </GridItem>
+            </SimpleGrid>
+
+            </Section>
         </Container>
         
     )

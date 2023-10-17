@@ -101,16 +101,12 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <MenuItem as={MenuLink} href="/">
-                  About
-                </MenuItem>
-                <MenuItem as={MenuLink} href="/gallery">
+              <MenuItem as={MenuLink} href="/gallery">
                   Gallery
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
-                  Posts
-                </MenuItem>
-                
+                <MenuItem as={MenuLink} href="https://www.instagram.com/yuan__photo__/?img_index=1">
+                My Instagram
+                </MenuItem>    
               </MenuList>
             </Menu>
           </Box>
